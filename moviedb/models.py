@@ -39,11 +39,11 @@ class Movie(models.Model):
 
 class Rating(models.Model):
     stars = models.PositiveSmallIntegerField()
-    user = models.ForeignKey(Rater)
+    rater = models.ForeignKey(Rater)
     movie = models.ForeignKey(Movie)
 
     def __str__(self):
-        return '@{} gives {} {}*'.format(self.user, self.movie, self.stars)
+        return '@{} gives {} {}*'.format(self.rater, self.movie, self.stars)
 
 
 def load_ml_data():
