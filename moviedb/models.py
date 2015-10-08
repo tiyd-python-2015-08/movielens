@@ -24,7 +24,7 @@ class Rater(models.Model):
     occupation = models.CharField(max_length=40)
 
     def __str__(self):
-        return str(self.id)
+        return '{}'.format(self.id)
 
 
 class Movie(models.Model):
