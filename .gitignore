@@ -1,2 +1,3 @@
 *.sqlite3
 ml-1m/
+moviedb/fixtures
